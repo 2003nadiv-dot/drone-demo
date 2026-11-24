@@ -1,0 +1,316 @@
+{
+  "title": "Vanta X4 Inspection Drone",
+  "subtitle": "Interactive exploded view \u00b7 concept demo",
+  "package": "pro",
+  "model": "models/vanta-x4.glb",
+  "units": "m",
+  "accent": "#f26b1d",
+  "accentText": "#1a0c02",
+  "scene": "blueprint",
+  "autoSpin": false,
+  "camera": {
+    "theta": 0.75,
+    "phi": 1.1
+  },
+  "parts": [
+    {
+      "node": "Top_Shell",
+      "name": "Top shell",
+      "category": "Airframe",
+      "shell": true,
+      "explode": [
+        0,
+        0.3,
+        0
+      ],
+      "description": "Weather-sealed graphite cover. Protects the electronics from rain and dust and carries the status markings."
+    },
+    {
+      "node": "Core_Frame",
+      "name": "Carbon core frame",
+      "category": "Airframe",
+      "explode": [
+        0,
+        0,
+        0
+      ],
+      "description": "Carbon-fiber chassis. Every arm, battery and sensor bolts to this stiff, lightweight backbone."
+    },
+    {
+      "node": "Flight_Controller",
+      "name": "Flight controller",
+      "category": "Electronics",
+      "explode": [
+        0,
+        0.16,
+        0.1
+      ],
+      "description": "The drone's brain. Reads the motion sensors hundreds of times per second and adjusts each motor to keep the drone stable."
+    },
+    {
+      "node": "Battery_Left",
+      "name": "Left battery",
+      "category": "Power",
+      "explode": [
+        -0.28,
+        0.14,
+        -0.12
+      ],
+      "description": "Hot-swappable lithium-ion pack. Two packs let the pilot replace one at a time without powering down."
+    },
+    {
+      "node": "Battery_Right",
+      "name": "Right battery",
+      "category": "Power",
+      "explode": [
+        0.28,
+        0.14,
+        -0.12
+      ],
+      "description": "Second hot-swappable pack. Each pack shows its charge on four green lights."
+    },
+    {
+      "node": "GPS_Module",
+      "name": "GPS / RTK module",
+      "category": "Electronics",
+      "explode": [
+        0,
+        0.42,
+        -0.15
+      ],
+      "description": "Satellite positioning puck on a mast, raised above the electronics for a clean signal. RTK correction gives centimetre-level accuracy."
+    },
+    {
+      "node": "Vision_Sensors",
+      "name": "Obstacle sensors",
+      "category": "Sensors",
+      "explode": [
+        0,
+        0.05,
+        0.3
+      ],
+      "description": "Stereo cameras that see obstacles ahead so the drone can brake or steer around them automatically."
+    },
+    {
+      "node": "Antennas",
+      "name": "Transmission antennas",
+      "category": "Electronics",
+      "explode": [
+        0,
+        0.2,
+        -0.3
+      ],
+      "description": "Folding antennas for the video and control link back to the pilot's controller."
+    },
+    {
+      "node": "Gimbal_Camera",
+      "name": "Gimbal camera",
+      "category": "Payload",
+      "explode": [
+        0,
+        -0.18,
+        0.22
+      ],
+      "description": "Stabilised camera on a 3-axis gimbal with zoom, wide and thermal lenses for inspection work."
+    },
+    {
+      "node": "Landing_Gear",
+      "name": "Landing gear",
+      "category": "Airframe",
+      "explode": [
+        0,
+        -0.22,
+        0
+      ],
+      "description": "Carbon skids that keep the camera clear of the ground on take-off and landing."
+    },
+    {
+      "node": "Arm_FR",
+      "name": "Arm (front right)",
+      "category": "Propulsion",
+      "explode": [
+        0.113,
+        0,
+        0.113
+      ],
+      "description": "Folding carbon arm. Folds in for transport and locks out for flight."
+    },
+    {
+      "node": "Arm_FL",
+      "name": "Arm (front left)",
+      "category": "Propulsion",
+      "explode": [
+        -0.113,
+        0,
+        0.113
+      ],
+      "description": "Folding carbon arm. Folds in for transport and locks out for flight."
+    },
+    {
+      "node": "Arm_RR",
+      "name": "Arm (rear right)",
+      "category": "Propulsion",
+      "explode": [
+        0.113,
+        0,
+        -0.113
+      ],
+      "description": "Folding carbon arm. Folds in for transport and locks out for flight."
+    },
+    {
+      "node": "Arm_RL",
+      "name": "Arm (rear left)",
+      "category": "Propulsion",
+      "explode": [
+        -0.113,
+        0,
+        -0.113
+      ],
+      "description": "Folding carbon arm. Folds in for transport and locks out for flight."
+    },
+    {
+      "node": "Motor_FR",
+      "name": "Motor + propeller (front right)",
+      "category": "Propulsion",
+      "explode": [
+        0.312,
+        0.2,
+        0.312
+      ],
+      "description": "Brushless motor spinning a 21-inch folding propeller. Two props spin clockwise and two counter-clockwise so the drone doesn't twist."
+    },
+    {
+      "node": "Motor_FL",
+      "name": "Motor + propeller (front left)",
+      "category": "Propulsion",
+      "explode": [
+        -0.312,
+        0.2,
+        0.312
+      ],
+      "description": "Brushless motor spinning a 21-inch folding propeller. Two props spin clockwise and two counter-clockwise so the drone doesn't twist."
+    },
+    {
+      "node": "Motor_RR",
+      "name": "Motor + propeller (rear right)",
+      "category": "Propulsion",
+      "explode": [
+        0.312,
+        0.2,
+        -0.312
+      ],
+      "description": "Brushless motor spinning a 21-inch folding propeller. Two props spin clockwise and two counter-clockwise so the drone doesn't twist."
+    },
+    {
+      "node": "Motor_RL",
+      "name": "Motor + propeller (rear left)",
+      "category": "Propulsion",
+      "explode": [
+        -0.312,
+        0.2,
+        -0.312
+      ],
+      "description": "Brushless motor spinning a 21-inch folding propeller. Two props spin clockwise and two counter-clockwise so the drone doesn't twist."
+    }
+  ],
+  "spin": [
+    {
+      "node": "Prop_FR",
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "speed": 6
+    },
+    {
+      "node": "Prop_FL",
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "speed": -6
+    },
+    {
+      "node": "Prop_RR",
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "speed": -6
+    },
+    {
+      "node": "Prop_RL",
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "speed": 6
+    }
+  ],
+  "paint": [
+    {
+      "label": "Shell",
+      "materials": [
+        "Shell"
+      ]
+    },
+    {
+      "label": "Accent",
+      "materials": [
+        "Accent"
+      ]
+    },
+    {
+      "label": "Gimbal",
+      "materials": [
+        "Gimbal"
+      ]
+    }
+  ],
+  "specs": [
+    [
+      "Wheelbase (diagonal)",
+      "890 mm"
+    ],
+    [
+      "Size (arms out, no props)",
+      "710 \u00d7 710 \u00d7 440 mm"
+    ],
+    [
+      "Weight (with batteries)",
+      "6.4 kg"
+    ],
+    [
+      "Max take-off weight",
+      "9 kg"
+    ],
+    [
+      "Flight time",
+      "Up to 50 min"
+    ],
+    [
+      "Propellers",
+      "21 in folding"
+    ],
+    [
+      "Camera",
+      "Zoom + wide + thermal"
+    ],
+    [
+      "Batteries",
+      "2 \u00d7 hot-swap Li-ion"
+    ],
+    [
+      "Protection",
+      "IP55"
+    ]
+  ],
+  "compare": {
+    "person": true
+  },
+  "note": "Vanta X4 is a fictional concept drone made for this demo. Its specs are illustrative, based on typical industrial inspection drones of this size. Not affiliated with any drone maker."
+}
